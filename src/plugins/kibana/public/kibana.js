@@ -11,7 +11,7 @@ const chrome = require('ui/chrome');
 const routes = require('ui/routes');
 const modules = require('ui/modules');
 
-const kibanaLogoUrl = require('ui/images/kibana.svg');
+const kibanaLogoUrl = require('ui/images/rmwb_logo.png');
 
 routes.enable();
 
@@ -25,11 +25,11 @@ chrome
   'logo': 'url(' + kibanaLogoUrl + ') left no-repeat',
   'smallLogo': 'url(' + kibanaLogoUrl + ') left no-repeat'
 })
-.setNavBackground('#222222')
+.setNavBackground('#002d38')
 .setTabDefaults({
   resetWhenActive: true,
   lastUrlStore: window.sessionStore,
-  activeIndicatorColor: '#656a76'
+  activeIndicatorColor: '#f0ae22'
 })
 .setTabs([
   {
@@ -40,7 +40,7 @@ chrome
     id: 'visualize',
     title: 'Visualize',
     activeIndicatorColor: function () {
-      return (String(this.lastUrl).indexOf('/visualize/step/') === 0) ? 'white' : '#656a76';
+      return (String(this.lastUrl).indexOf('/visualize/step/') === 0) ? 'white' : '#f0ae22';
     }
   },
   {

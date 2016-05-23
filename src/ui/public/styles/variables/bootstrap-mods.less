@@ -177,7 +177,7 @@
 //** Text color for `<input>`s
 @input-color:                     @text-color;
 //** `<input>` border color
-@input-border:                    @gray-lighter;
+@input-border:                    @gray-dark;
 //** Border color for inputs on focus
 @input-border-focus:              @gray-light;
 
@@ -340,9 +340,9 @@
 @navbar-arrow-size:                7px;
 
 // Default theme
-@navbar-default-bg:                     #656A76;
+@navbar-default-bg:                     @light-yellow;
 @navbar-default-color:                  @white;
-@navbar-default-border:                 darken(@navbar-default-bg, 10%);
+@navbar-default-border:                 @dark-yellow;
 @navbar-default-link-color:             @gray-lighter;
 @navbar-default-link-hover-color:       @white;
 @navbar-default-link-hover-bg:          transparent;
@@ -364,7 +364,7 @@
 
 // Inverted navbar
 // Reset inverted navbar basics
-@navbar-inverse-link-active-bg:         #41454c;
+@navbar-inverse-link-active-bg:         @light-yellow;
 @navbar-inverse-color:                  @white;
 @navbar-inverse-bg:                     @gray-darker;
 @navbar-inverse-border:                 darken(@navbar-inverse-bg, 10%);
@@ -372,7 +372,7 @@
 // Inverted navbar links
 @navbar-inverse-link-color:             @gray-lighter;
 @navbar-inverse-link-hover-color:       @white;
-@navbar-inverse-link-hover-bg:          lighten(@navbar-inverse-bg, 20%);
+@navbar-inverse-link-hover-bg:          @dark-yellow;
 @navbar-inverse-link-active-color:      @white;
 @navbar-inverse-link-disabled-color:    @gray-light;
 @navbar-inverse-link-disabled-bg:       transparent;
